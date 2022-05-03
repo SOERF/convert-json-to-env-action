@@ -13,7 +13,7 @@ Each json entry will dynamically become an env variable.
 ## Example usage:
 
 ```
-uses: SOERF/convert-json-to-env-action@v1.1.1
+uses: SOERF/convert-json-to-env-action@v1.1.2
 with:
     json-file: './file.json'
 ```
