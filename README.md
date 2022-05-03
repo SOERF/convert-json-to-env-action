@@ -8,12 +8,12 @@ json-file: The path to the json file
 
 ## Outputs:
 
-Each json entry will dynamically become an output.
+Each json entry will dynamically become an env variable.
 
 ## Example usage:
 
 ```
-uses: SOERF/convert-json-to-env-action@v1.1
+uses: SOERF/convert-json-to-env-action@v1.1.1
 with:
     json-file: './file.json'
 ```
