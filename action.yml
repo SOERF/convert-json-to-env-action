@@ -1,0 +1,15 @@
+name: Convert JSON to ENV
+description: Convert single level json file to env format
+
+inputs:
+  json-file:
+    description: "Path to the json file"
+    required: true
+
+outputs:
+  env:
+    description: "The formatted content"
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
