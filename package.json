@@ -2,6 +2,7 @@
   "dependencies": {
     "@actions/core": "^1.7.0",
     "constant-case": "^3.0.4",
-    "jsonfile": "^6.1.0"
+    "jsonfile": "^6.1.0",
+    "lodash.get": "^4.4.2"
   }
 }

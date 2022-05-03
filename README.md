@@ -1,10 +1,11 @@
 # Convert Json to Env Action
 
-This action converts all attributes in a single level json file into upper case env format.
+Parses a JSON file and converts all non-nested attributes to env variables.
 
 ## Inputs
 
 json-file: The path to the json file
+json-attribute: Dot notated path of nested object
 
 ## Outputs:
 
@@ -13,9 +14,10 @@ Each json entry will dynamically become an env variable.
 ## Example usage:
 
 ```
-uses: SOERF/convert-json-to-env-action@v1.1.2
+uses: SOERF/convert-json-to-env-action@v1.2
 with:
     json-file: './file.json'
+    json-attribute: 'my.data.path'
 ```
 
 ## Build
