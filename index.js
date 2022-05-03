@@ -9,9 +9,8 @@ try {
     let envContent = ""
     for (let key in jsonContent) {
         let constantKey = constantCase.constantCase(key)
-        envContent += `${constantKey}="${jsonContent[key]}"\n`
+        core.exportVariable(constantKey, jsonContent[key])
     }
-    core.setOutput("env", envContent);
 } catch (error) {
     core.setFailed(error.message);
 }

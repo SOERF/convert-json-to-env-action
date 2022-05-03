@@ -6,10 +6,6 @@ inputs:
     description: "Path to the json file"
     required: true
 
-outputs:
-  env:
-    description: "The formatted content"
-
 runs:
   using: "node16"
   main: "dist/index.js"
