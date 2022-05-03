@@ -17,3 +17,17 @@ uses: SOERF/convert-json-to-env-action@v1.0
 with:
     json-file: './file.json'
 ```
+
+## Build
+
+Install npm dependencies
+
+`npm i`
+
+Install ncc to compile node_modules into a single file
+
+`npm i -g @vercel/ncc`
+
+Compile
+
+`ncc build index.js`
